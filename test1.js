@@ -1,14 +1,14 @@
 function isPalindrome(str) {
-  let j = str.length - 1;
-  for (let i = 0; i < str.length / 2; i++) {
-    if (str[i] != str[j]) {
-      return "uwu";
-    }
-    j--;
+  let pal = str.split("").reverse().join("");
+
+  if (pal == str) {
+    return "This is a palindrome";
   }
-  return "String is a palindrome";
+  return "uwu";
 }
 
-let str = "racecar";
+let str = "RACECAR";
+let str2 = "hello world";
 
 console.log(isPalindrome(str));
+console.log(isPalindrome(str2));
